@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import { Section } from '../Section/Section';
-import { SimpleForm } from '../Form/SimpleForm';
-import { ContactsList } from '../ContactsList/ContactsList';
-import { Filter } from '../Filter/Filter';
+import { Section } from '../../components/Section/Section';
+import { SimpleForm } from '../../components/Form/SimpleForm';
+import { ContactsList } from '../../components/ContactsList/ContactsList';
+import { Filter } from '../../components/Filter/Filter';
 import { Container } from './Contacts.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchContactsThunk } from 'redux/asyncThuncs';
-import { contactsSelector } from 'redux/selectors';
+import { fetchContactsThunk } from 'redux/contacts/asyncThuncs';
+import { contactsSelector } from 'redux/contacts/selectors';
 import { ThreeDots } from 'react-loader-spinner';
 import { selectIsAuth } from 'redux/auth/selectors';
 

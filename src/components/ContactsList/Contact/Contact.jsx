@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { DelButton, Doters, Item } from './Contact.styled';
 import { useDispatch } from 'react-redux';
-import { deleteContactThunk } from 'redux/asyncThuncs';
+import { deleteContactThunk } from 'redux/contacts/asyncThuncs';
 
 export const Contact = ({ contact }) => {
   const dispatch = useDispatch();

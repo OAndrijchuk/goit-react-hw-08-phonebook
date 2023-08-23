@@ -3,7 +3,7 @@ import {
   FormStyled,
   InputStyled,
   LableStyled,
-} from 'components/RegistrationForm/RegistrationForm.styled';
+} from 'pages/RegistrationForm/RegistrationForm.styled';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { logInUserThunk } from 'redux/auth/authThuncs';

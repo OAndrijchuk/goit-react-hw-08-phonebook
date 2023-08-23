@@ -1,7 +1,7 @@
 import { FilterContStyled, Input } from './Filter.styled';
-import { setFilter } from 'redux/filterSlice';
+import { setFilter } from 'redux/contacts/filterSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { filterSelector } from 'redux/selectors';
+import { filterSelector } from 'redux/contacts/selectors';
 import { Lable } from 'components/Form/SimpleForm.styled';
 
 export const Filter = () => {

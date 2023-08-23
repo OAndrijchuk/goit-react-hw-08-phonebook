@@ -9,8 +9,8 @@ import {
   NewForm,
 } from './SimpleForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { contactsSelector } from 'redux/selectors';
-import { addContactThunk } from 'redux/asyncThuncs';
+import { contactsSelector } from 'redux/contacts/selectors';
+import { addContactThunk } from 'redux/contacts/asyncThuncs';
 
 const userSchema = yup.object().shape({
   name: yup

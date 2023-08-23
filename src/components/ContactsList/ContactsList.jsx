@@ -1,4 +1,4 @@
-import { contactsSelector, filterSelector } from 'redux/selectors';
+import { contactsSelector, filterSelector } from 'redux/contacts/selectors';
 import { Contact } from './Contact/Contact';
 
 import { List } from './ContactList.styled';

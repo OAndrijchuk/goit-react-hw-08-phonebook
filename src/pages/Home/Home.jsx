@@ -5,8 +5,11 @@ import {
   SubContStyled,
   TitleStyled,
 } from './Home.styled';
+import { useSelector } from 'react-redux';
+import { selectIsAuth } from 'redux/auth/selectors';
 
 const Home = () => {
+  const isAuth = useSelector(selectIsAuth);
   return (
     <HomeContStyled>
       <SubContStyled>
@@ -20,8 +23,10 @@ const Home = () => {
           eligendi quaerat tempore magni tempora qui dicta esse nulla dolores
           eum incidunt deserunt provident quam ut, officia doloribus dolorem id
           voluptatum.
-        </p>{' '}
-        <HeroBtnStyled to="/register">Sign up &#10143;</HeroBtnStyled>
+        </p>
+        {!isAuth && (
+          <HeroBtnStyled to="/register">Sign up &#10143;</HeroBtnStyled>
+        )}
       </SubContStyled>
     </HomeContStyled>
   );
