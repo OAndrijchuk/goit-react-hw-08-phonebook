@@ -13,7 +13,7 @@ const RegistrationForm = lazy(() =>
 const LoginForm = lazy(() => import('../pages/LoginForm/LoginForm'));
 const PublicRoute = lazy(() => import('HOC/PublicRoute'));
 const PrivatRoute = lazy(() => import('HOC/PrivatRoute'));
-const NotFound = lazy(() => import('./NotFound/NotFound'));
+const NotFound = lazy(() => import('../pages/NotFound/NotFound'));
 
 export const App = () => {
   const isRefresh = useSelector(selecIsRefresh);
